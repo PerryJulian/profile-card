@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react'
 import ProfileCard from './components/ProfileCard'
 import styled from 'styled-components'
@@ -16,37 +15,51 @@ const data = {
   photosCount: '1.4k'
 }
 
-const CircleLeft = styled.img`
-  position: absolute;
-  left: -50%;
-  top: -25%;
-  width: 100%;
+const Container = styled.div`
+  background-color: #19a1ae;
+  height: 100vh;
+  overflow: hidden;
+  padding: 147px 25px;
+  position: relative;
 
   @media ${breakpoints.device.lg} {
-    top: -130%;
+    padding-top: 173px;
+  }
+`
+
+const CircleLeft = styled.img`
+  position: absolute;
+  left: -55%;
+  top: -24%;
+  width: 110%;
+
+  @media ${breakpoints.device.lg} {
+    top: -50%;
+    left: -19%;
+    width: 978px;
   }
 `
 
 const CircleRight = styled.img`
-  bottom: -40%;
+  bottom: 0;
   position: absolute;
-  right: -100%;
-  width: 150%;
+  right: -105%;
+  width: 978px;
 
   @media ${breakpoints.device.lg} {
-    bottom: -123%;
-    right: -25%;
-    width: 80%;
+    top: 346px;
+    right: -18%;
+    width: 978px;
   }
 `
 
 function App() {
   return (
-    <div className="App">
+    <Container>
         <CircleLeft src={circleLeft} alt=""/>
         <CircleRight src={circleRight} alt=""/>
         <ProfileCard data={data}/>
-    </div>
+    </Container>
   );
 }
 

@@ -10,6 +10,7 @@ const Card = styled.div`
     font-family: Kumbh Sans;
     position: relative;
     margin: auto;
+    max-height: 374px;
     max-width: 350px;
     min-width: 326px;
     z-index: 10;
