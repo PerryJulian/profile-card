@@ -84,9 +84,9 @@ function ProfileCard(props) {
         <>
             <Card>
 
-                <HeaderImage src={bgImage} />
+                <HeaderImage src={bgImage} alt=""/>
                 <ProfileImageContainer>
-                    <ProfileImage src={profileImage} />
+                    <ProfileImage src={profileImage} alt="profile image"/>
                 </ProfileImageContainer>
                 <Bio>
                     <BioTop>

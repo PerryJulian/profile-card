@@ -43,8 +43,8 @@ const CircleRight = styled.img`
 function App() {
   return (
     <div className="App">
-        <CircleLeft src={circleLeft}/>
-        <CircleRight src={circleRight}/>
+        <CircleLeft src={circleLeft} alt=""/>
+        <CircleRight src={circleRight} alt=""/>
         <ProfileCard data={data}/>
     </div>
   );
